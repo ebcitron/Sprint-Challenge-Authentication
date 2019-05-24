@@ -24,6 +24,7 @@ function register(req, res) {
     .catch(error => {
       res.status(500).json(error);
     });
+    
 }
 
 function login(req, res) {
