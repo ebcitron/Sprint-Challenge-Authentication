@@ -11,6 +11,7 @@ module.exports = server => {
   server.get("/api/jokes", authenticate, getJokes);
 };
 
+
 function register(req, res) {
   // implement user registration
   let user = req.body;
@@ -24,7 +25,7 @@ function register(req, res) {
     .catch(error => {
       res.status(500).json(error);
     });
-    
+
 }
 
 function login(req, res) {
